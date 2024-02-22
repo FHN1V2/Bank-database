@@ -42,6 +42,7 @@
             this.ButtonAddData = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
             this.textBoxForDel = new System.Windows.Forms.TextBox();
+            this.buttonChangeFio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ShowDate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@
             this.CloseDate,
             this.DepStart});
             this.ShowDate.Location = new System.Drawing.Point(21, 109);
-            this.ShowDate.Margin = new System.Windows.Forms.Padding(2);
+            this.ShowDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ShowDate.Name = "ShowDate";
             this.ShowDate.RowHeadersVisible = false;
             this.ShowDate.RowHeadersWidth = 51;
@@ -171,12 +172,23 @@
             this.textBoxForDel.TabIndex = 8;
             this.textBoxForDel.TextChanged += new System.EventHandler(this.textBoxForDel_TextChanged);
             // 
+            // buttonChangeFio
+            // 
+            this.buttonChangeFio.Location = new System.Drawing.Point(322, 69);
+            this.buttonChangeFio.Name = "buttonChangeFio";
+            this.buttonChangeFio.Size = new System.Drawing.Size(75, 23);
+            this.buttonChangeFio.TabIndex = 9;
+            this.buttonChangeFio.Text = "Изменить";
+            this.buttonChangeFio.UseVisualStyleBackColor = true;
+            this.buttonChangeFio.Click += new System.EventHandler(this.buttonChangeFio_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(869, 526);
+            this.Controls.Add(this.buttonChangeFio);
             this.Controls.Add(this.textBoxForDel);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.ButtonAddData);
@@ -186,7 +198,7 @@
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.ShowDate);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Bank data base";
             ((System.ComponentModel.ISupportInitialize)(this.ShowDate)).EndInit();
@@ -211,6 +223,7 @@
         private System.Windows.Forms.Button ButtonAddData;
         private System.Windows.Forms.Button buttonDel;
         private System.Windows.Forms.TextBox textBoxForDel;
+        private System.Windows.Forms.Button buttonChangeFio;
     }
 }
 
